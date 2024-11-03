@@ -6,4 +6,7 @@
 .header .contact-info {
   display: flex;
   align-items: center;
+}
+.container {
+  margin: 0px 160px 0px 160px;
 }/*# sourceMappingURL=main.css.map */
