@@ -17,7 +17,7 @@
 .header .contact .contact-info .phone-number {
   display: flex;
   align-items: center;
-  font-size: 36px;
+  font-size: clamp(1.5rem, 1.2017rem + 0.8523vw, 1.875rem);
   font-weight: 700;
 }
 .header .contact .contact-info .phone-number img {
@@ -40,6 +40,20 @@
   display: coloumn;
 }
 
+.start {
+  display: flex;
+  justify-content: space-between;
+}
+.start .text .colorful {
+  color: #1D438E;
+}
+.start .first-image {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  width: 100%;
+}
+
 .container {
   margin: 0px 160px 0px 160px;
 }
@@ -48,4 +62,12 @@ body {
   margin: 0;
   font-family: "Montserrat", serif;
   font-style: normal;
+}
+
+h1 {
+  font-size: clamp(2rem, 0.4091rem + 4.5455vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 1.2017rem + 0.8523vw, 1.875rem);
 }/*# sourceMappingURL=main.css.map */
