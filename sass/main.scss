@@ -4,7 +4,7 @@
 @import "components/start";
 
 .container {
-  margin: 0px 160px 0px 160px;
+  padding: 0px 160px 0px 160px;
 }
 body {
   margin: 0;
@@ -17,4 +17,8 @@ h1 {
 
 h3 {
   font-size: clamp(1.5rem, 1.2017rem + 0.8523vw, 1.875rem);
+}
+.start-bg {
+  background-image: url('../img/first-img.png');
+  background-repeat: no-repeat;
 }
