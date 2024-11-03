@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    // стили для логотипа
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+
+    .phone-number {
+      // стили для номера телефона
+    }
+
+    .callback-button {
+      // стили для кнопки "обратный звонок"
+    }
+  }
+}
