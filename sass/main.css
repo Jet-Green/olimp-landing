@@ -42,6 +42,7 @@
 
 .info {
   display: flex;
+  justify-content: space-between;
 }
 .info .text {
   display: column;
