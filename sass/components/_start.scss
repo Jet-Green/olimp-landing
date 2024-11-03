@@ -1,0 +1,15 @@
+.start {
+  display: flex;
+  justify-content: space-between;
+  .text {
+    .colorful {
+      color: #1D438E;
+    }
+  }
+  .first-image {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 100%;
+  }
+}

@@ -1,5 +1,6 @@
 @import "components/header";
 @import "components/plus";
+@import "components/start";
 
 .container {
   margin: 0px 160px 0px 160px;
@@ -8,4 +9,11 @@ body {
   margin: 0;
   font-family: "Montserrat", serif;
   font-style: normal;
+}
+h1 {
+  font-size: clamp(2rem, 0.4091rem + 4.5455vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 1.2017rem + 0.8523vw, 1.875rem);
 }
