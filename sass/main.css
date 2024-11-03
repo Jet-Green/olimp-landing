@@ -2,11 +2,42 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 140px;
 }
-.header .contact-info {
+.header .logo img {
+  max-height: 100px;
+}
+.header .contact {
+  display: flex;
+}
+.header .contact .contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.header .contact .contact-info .phone-number {
   display: flex;
   align-items: center;
+  font-size: 36px;
+  font-weight: 700;
 }
+.header .contact .contact-info .phone-number img {
+  height: 35px;
+}
+.header .contact .callback-button {
+  margin-left: 50px;
+  background-color: #1D438E;
+  color: white;
+  font-size: 30px;
+  border-radius: 13px;
+  border: 0px;
+}
+
 .container {
   margin: 0px 160px 0px 160px;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", serif;
+  font-style: normal;
 }/*# sourceMappingURL=main.css.map */

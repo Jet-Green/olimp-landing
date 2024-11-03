@@ -2,21 +2,41 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 140px;
 
   .logo {
     // стили для логотипа
-  }
-
-  .contact-info {
-    display: flex;
-    align-items: center;
-
-    .phone-number {
-      // стили для номера телефона
+    img {
+      max-height: 100px;
     }
+  }
+  .contact {
+    display: flex;
 
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+
+      // стили для номера телефона
+      .phone-number {
+        display: flex;
+        align-items: center;
+        font-size: 36px;
+        font-weight: 700;
+        img {
+          height: 35px;
+        }
+      }
+
+    }
     .callback-button {
       // стили для кнопки "обратный звонок"
+      margin-left: 50px;
+      background-color: #1D438E;
+      color: white;
+      font-size: 30px;
+      border-radius: 13px;
+      border: 0px;
     }
   }
 }
