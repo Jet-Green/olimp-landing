@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .contact-info {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=header.css.map */
