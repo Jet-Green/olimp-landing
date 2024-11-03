@@ -32,6 +32,14 @@
   border: 0px;
 }
 
+.plus ul {
+  display: flex;
+  justify-content: space-between;
+}
+.plus li {
+  display: coloumn;
+}
+
 .container {
   margin: 0px 160px 0px 160px;
 }
