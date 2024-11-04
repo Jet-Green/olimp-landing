@@ -18,3 +18,19 @@
     padding-top: 30px;
   }
 }
+@media only screen and (max-width: 1264px) {
+  .garant {
+    &__teg {
+      display: flex;
+      justify-content: center;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      li {
+        width: 100%;
+      }
+    }
+  }
+}
