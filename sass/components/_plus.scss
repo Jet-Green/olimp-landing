@@ -1,9 +1,30 @@
 .plus {
+  h1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  h3 {
+    height: 80px;
+  }
   ul {
     display: flex;
     justify-content: space-between;
+    li {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      img {
+        height: 100px;
+      }
+    }
   }
-  li {
-    display: coloumn;
+  .line {
+    height: 2px;
+    background-color: #1d438e;
+  }
+  padding-bottom: 100px;
+  p {
+    font-size: 18px;
   }
 }
