@@ -172,6 +172,11 @@
   padding-top: 30px;
 }
 
+.contacts {
+  padding-left: 260px;
+  display: flex;
+}
+
 .container {
   padding: 0px 160px 0px 160px;
 }
