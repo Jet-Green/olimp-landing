@@ -1,6 +1,7 @@
 .garant {
   &__teg {
     display: flex;
+    gap: 15px;
   }
   h1 {
     text-align: center;
@@ -11,5 +12,9 @@
   }
   li {
     display: column;
+  }
+  img {
+    height: 71px;
+    padding-top: 30px;
   }
 }
