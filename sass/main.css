@@ -172,6 +172,148 @@
   padding-top: 30px;
 }
 
+.consult {
+  padding: 100px 0 100px 0;
+}
+.consult h1 {
+  margin: 0px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.consult .row {
+  display: flex;
+  justify-content: space-between;
+}
+.consult .row .call-us {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: start;
+}
+.consult .row .call-us img {
+  height: 50px;
+}
+.consult .row .phone {
+  display: flex;
+  flex-direction: column;
+}
+.consult .row .phone .text {
+  font-size: clamp(0.75rem, 0.4517rem + 0.8523vw, 1.125rem);
+  color: #A6A6A6;
+}
+.consult .row h3 {
+  margin: 0;
+  color: black;
+}
+.consult .consult__column {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.consult .consult__column form {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.consult .consult__column form .checkbox {
+  margin-top: 8px;
+  font-size: clamp(0.625rem, 0.5256rem + 0.2841vw, 0.75rem);
+}
+.consult .consult__column form .input-btn {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #1d438e;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.consult .consult__column form .input-btn input {
+  background: url("../../img/call-icon.svg") no-repeat left;
+  background-size: 25px;
+  background-position-x: 10px;
+  text-indent: 45px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: clamp(0.625rem, 0.5256rem + 0.2841vw, 0.75rem);
+  border: 0px;
+  min-width: 250px;
+}
+.consult .consult__column form .input-btn input:focus {
+  outline: none;
+}
+.consult .consult__column form .input-btn button {
+  background-color: #1d438e;
+  border: 0px;
+  color: white;
+  font-size: clamp(0.875rem, 0.6761rem + 0.5682vw, 1.125rem);
+  line-height: 1;
+}
+.consult .consult__column2 {
+  width: 30%;
+}
+.consult .consult__column2 .in-office {
+  border: 0px;
+  border-radius: 32px;
+  background-color: #EBEDEF;
+  padding: 32px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.consult .consult__column2 .in-office h3 {
+  margin: 0px;
+  margin-bottom: 40px;
+}
+.consult .consult__column2 .in-office .plus-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.consult .consult__column2 .in-office .plus-container .heading {
+  font-weight: 700;
+  font-size: clamp(0.875rem, 0.5767rem + 0.8523vw, 1.25rem);
+}
+.consult .consult__column2 .in-office .plus-container .item {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.consult .consult__column2 .in-office .plus-container .item span {
+  margin-left: 14px;
+  font-size: clamp(0.625rem, 0.3267rem + 0.8523vw, 1rem);
+}
+.consult .consult__row {
+  display: flex;
+  justify-content: space-between;
+}
+.consult .line {
+  background-color: #1d438e;
+  height: 2px;
+}
+.consult .social {
+  display: flex;
+  flex-direction: column;
+}
+.consult .social h2 {
+  margin-top: 0;
+}
+.consult .social a {
+  color: #1D438E;
+  font-size: clamp(1rem, 0.2045rem + 2.2727vw, 2rem);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.consult .social a img {
+  margin-right: 16px;
+}
+.consult .social .contacts-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
 .container {
   padding: 0px 160px 0px 160px;
 }
