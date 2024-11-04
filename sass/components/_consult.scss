@@ -86,6 +86,17 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      button {
+        width: 100%;
+        background-color: #1D438E;
+        color: white;
+        font-size: clamp(1rem, 0.8011rem + 0.5682vw, 1.25rem);
+        font-weight: 700;
+        border: 0px;
+        border-radius: 12px;
+        height: 56px;
+        margin-top: 60px;
+      }
       h3 {
         margin: 0px;
         margin-bottom: 40px;

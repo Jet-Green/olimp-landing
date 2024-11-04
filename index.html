@@ -20,11 +20,9 @@
         <div class="contact">
           <div class="contact-info">
             <div class="phone-number"><img src="./img/phone-icon.png" alt="" />+7 812 987 3030</div>
-            <span class="address">
-              Басков переулок, дом 5, офис 4
-            </span>
+            <span class="address"> Басков переулок, дом 5, офис 4 </span>
           </div>
-          <button class="callback-button">Обратный звонок</button>
+          <button class="callback-button" id="callback-button">Обратный звонок</button>
         </div>
       </header>
     </div>
@@ -39,10 +37,10 @@
           >
         </div>
         <div class="form">
-          <form action="/get-consultation">
+          <form action="/get-consultation" id="free-consultation-form">
             <span class="text"> Оставить номер телефона <br />и наш менеджер свяжется с вами </span>
             <input type="tel" placeholder="Телефон" class="phone-input" />
-            <button type="submit">Бесплатная консультация</button>
+            <button type="submit" id="free-consultation-btn">Бесплатная консультация</button>
             <input class="personal" type="checkbox" id="personal" name="personal" />
             <label for="personal">Согласен на обработку персональных данных</label>
           </form>
@@ -138,7 +136,6 @@
       </div>
     </div>
 
-
     <div class="container">
       <div class="garant">
         <h1>Гарантии</h1>
@@ -149,11 +146,8 @@
               <h3>Гарантия лучшей <br />цены</h3>
             </div>
             <p>
-              Если вы найдете цену
-              ниже нашей на аналогичную
-              услугу при том же уровне
-              квалификации бренда
-              мы предложим такую же цену!
+              Если вы найдете цену ниже нашей на аналогичную услугу при том же уровне квалификации бренда мы предложим
+              такую же цену!
             </p>
           </li>
           <li class="garant__item">
@@ -165,9 +159,8 @@
               </h3>
             </div>
             <p>
-              В соответствии с законом «О Защите прав 
-              потребителей» в случае не достижения 
-              поставленных целей, мы возвращаем вам деньги, за вычетом незначительных сумм за фактически
+              В соответствии с законом «О Защите прав потребителей» в случае не достижения поставленных целей, мы
+              возвращаем вам деньги, за вычетом незначительных сумм за фактически
               <br />произведенные юридические действия.
             </p>
           </li>
@@ -180,9 +173,8 @@
               </h3>
             </div>
             <p>
-              Если в течении 1 года с момента оказания вам
-              наших услуг возникли какие то проблемы, связанные с ними, мы выступим в качестве
-              третьего лица на вашей стороне бесплатно!
+              Если в течении 1 года с момента оказания вам наших услуг возникли какие то проблемы, связанные с ними, мы
+              выступим в качестве третьего лица на вашей стороне бесплатно!
             </p>
           </li>
         </ul>
@@ -196,10 +188,10 @@
           <div class="consult__column">
             <h3>По телефону</h3>
             <div class="row">
-              <form action="/get-consultation">
+              <form action="/get-consultation" id="get-phone-call-2">
                 <div class="input-btn">
                   <input type="tel" placeholder="Ваш телефон" />
-                  <button>ЗАКАЗАТЬ ЗВОНОК</button>
+                  <button id="order-call" type="submit">ЗАКАЗАТЬ ЗВОНОК</button>
                 </div>
                 <div class="checkbox">
                   <input class="personal2" type="checkbox" id="personal2" name="personal2" />
@@ -250,6 +242,7 @@
                   <span> Чай, кофе в офисе </span>
                 </div>
               </div>
+              <button id="big-form-button">Записаться на консультацию</button>
             </div>
           </div>
         </div>
@@ -272,9 +265,88 @@
           <p>E-mail: <a href="mailto:general@olymplaw.com">general@olymplaw.com</a></p>
         </div>
         <div class="contacts__map">
-          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/?from=mapframe&ll=30.348061%2C59.938614&mode=usermaps&source=mapframe&um=constructor%3A3096909fd343f79f085fd2b9799aec2c17266559f6702be602c32549e0d21d82&utm_medium=mapframe&utm_source=maps&z=14" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=30.348061%2C59.938614&mode=usermaps&source=mapframe&um=constructor%3A3096909fd343f79f085fd2b9799aec2c17266559f6702be602c32549e0d21d82&utm_source=mapframe&z=14" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+          <div style="position: relative; overflow: hidden">
+            <a
+              href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+              style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+              >Санкт‑Петербург</a
+            ><a
+              href="https://yandex.ru/maps/2/saint-petersburg/?from=mapframe&ll=30.348061%2C59.938614&mode=usermaps&source=mapframe&um=constructor%3A3096909fd343f79f085fd2b9799aec2c17266559f6702be602c32549e0d21d82&utm_medium=mapframe&utm_source=maps&z=14"
+              style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+              >Яндекс Карты — транспорт, навигация, поиск мест</a
+            ><iframe
+              src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=30.348061%2C59.938614&mode=usermaps&source=mapframe&um=constructor%3A3096909fd343f79f085fd2b9799aec2c17266559f6702be602c32549e0d21d82&utm_source=mapframe&z=14"
+              width="560"
+              height="400"
+              frameborder="1"
+              allowfullscreen="true"
+              style="position: relative"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
+    <dialog id="mini-modal">
+      <p class="heading">Спасибо за заявку!</p>
+      <p>Скоро наш менеджер с вами свяжется</p>
+      <img class="close-icon" id="close-icon-2" src="./img/close-icon.svg" alt="" />
+    </dialog>
+
+    <dialog id="big-form-dialog">
+      <div class="dialog-container">
+        <p class="heading">Оставьте номер телефона и наш менеджер свяжется с вами</p>
+        <form action="/get-phone-call">
+          <input type="text" placeholder="Ваш телефон" />
+          <button type="submit">Отправить</button>
+          <div class="checkbox-container">
+            <input class="personal2" type="checkbox" id="personal2" name="personal2" />
+            <label for="personal2">Согласен на обработку персональных данных</label>
+          </div>
+        </form>
+        <img class="close-big-form-icon" id="close-icon-3" src="./img/close-icon.svg" alt="" />
+      </div>
+    </dialog>
   </body>
+  <script>
+    let miniModalElement = document.getElementById("mini-modal")
+
+    let getPhoneCallForm2 = document.getElementById("get-phone-call-2")
+    getPhoneCallForm2.addEventListener("submit", (event) => {
+      miniModalElement.setAttribute("display", "flex")
+      miniModalElement.showModal()
+      event.preventDefault()
+    })
+
+    let closeIcon2 = document.getElementById("close-icon-2")
+    closeIcon2.addEventListener("click", (event) => {
+      miniModalElement.setAttribute("display", "none")
+      miniModalElement.close()
+    })
+
+    let bigFormDialog = document.getElementById("big-form-dialog")
+    let bigFormButton = document.getElementById("big-form-button")
+
+    bigFormButton.addEventListener("click", (event) => {
+      bigFormDialog.setAttribute("display", "flex")
+      bigFormDialog.showModal()
+    })
+    let closeIcon3 = document.getElementById("close-icon-3")
+    closeIcon3.addEventListener("click", (event) => {
+      bigFormDialog.setAttribute("display", "none")
+      bigFormDialog.close()
+    })
+
+    let freeConsultationForm = document.getElementById('free-consultation-form')
+    freeConsultationForm.addEventListener('submit', (event) => {
+      miniModalElement.setAttribute("display", "flex")
+      miniModalElement.showModal()
+      event.preventDefault()
+    })
+
+    let callbackButton = document.getElementById('callback-button')
+    callbackButton.addEventListener('click', (event) => {
+      bigFormDialog.setAttribute("display", "flex")
+      bigFormDialog.showModal()
+    })
+  </script>
 </html>
