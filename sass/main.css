@@ -117,6 +117,7 @@
 
 .garant__teg {
   display: flex;
+  gap: 15px;
 }
 .garant h1 {
   text-align: center;
@@ -127,6 +128,10 @@
 }
 .garant li {
   display: column;
+}
+.garant img {
+  height: 71px;
+  padding-top: 30px;
 }
 
 .container {
