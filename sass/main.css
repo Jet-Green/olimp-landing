@@ -314,6 +314,27 @@
   justify-content: space-between;
 }
 
+.contacts {
+  padding: 100px 0 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts .contacts__text {
+  font-size: clamp(0.625rem, -0.071rem + 1.9886vw, 1.5rem);
+}
+.contacts .contacts__text a {
+  text-decoration: none;
+  color: #1D438E;
+}
+.contacts .contacts__text h3 {
+  margin: 0;
+}
+.contacts .contacts__text .line {
+  background-color: #1d438e;
+  height: 2px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .container {
   padding: 0px 160px 0px 160px;
 }

@@ -1,4 +1,26 @@
 .contacts {
-  padding-left: 260px;
+  // padding-left: 260px;
+  padding: 100px 0 100px 0;
   display: flex;
+  justify-content: space-between;
+  .contacts__text {
+    // width: 60%;
+    font-size: clamp(0.625rem, -0.071rem + 1.9886vw, 1.5rem);
+    a {
+      text-decoration: none;
+      color: #1D438E;
+    }
+    h3 {
+      margin: 0;
+    }
+    .line {
+      background-color: #1d438e;
+      height: 2px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  .contacts__map {
+    // width: 40%;
+  }
 }
