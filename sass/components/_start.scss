@@ -4,15 +4,13 @@
 
   min-height: 70vh;
   .text {
-    .colorful {
-      color: #1d438e;
-    }
     h1 {
       margin-bottom: 4px;
     }
     .caption {
       color: #626262;
       font-size: clamp(0.875rem, 0.3778rem + 1.4205vw, 1.5rem);
+      font-weight: 700;
     }
   }
   .first-image {
@@ -30,7 +28,7 @@
       padding: 24px;
       .text {
         font-size: clamp(1.125rem, 0.8267rem + 0.8523vw, 1.5rem);
-        font-weight: 600;
+        font-weight: 400;
       }
       .phone-input {
         width: 100%;
@@ -63,7 +61,35 @@
       }
     }
   }
+  .consult {
+    margin-top: 30px;
+    padding-bottom: 0;
+  }
 }
+
+.call-us-card {
+  width: 100%;
+  padding-bottom: 100px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  img {
+    position: absolute;
+    top: -90px;
+    right: 300px;
+    height: 100px;
+  }
+  .card {
+    font-size: clamp(1.75rem, 1.5511rem + 0.5682vw, 2rem);
+    font-weight: 600;
+    background-color: rgba($color: #fff, $alpha: 0.75);
+    padding: 20px;
+    border-radius: 36px;
+    border: 0px;
+  }
+}
+
 @media (max-width: 1264px) {
   .start {
     display: flex;
@@ -73,5 +99,8 @@
       margin-top: 56px; 
       margin-bottom: 120px; 
     }
+  }
+  .call-us-card {
+    display: none;
   }
 }

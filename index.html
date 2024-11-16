@@ -19,8 +19,10 @@
         <div class="logo"><img src="./img/logo-big.png" alt="" /></div>
         <div class="contact">
           <div class="contact-info">
-            <div class="phone-number"><img src="./img/phone-icon.png" alt="" />+7 812 987 3030</div>
-            <span class="address"> Басков переулок, дом 5, офис 4 </span>
+            <div class="phone-number">
+              <img src="./img/phone-icon.png" alt="" /><a href="tel:8(921) 943-22-71">8(921) 943-22-71</a>
+            </div>
+            <span class="address"> СПБ, ул. Комиссара Смирнова, дом 15</span>
           </div>
           <button class="callback-button" id="callback-button">Обратный звонок</button>
         </div>
@@ -30,38 +32,39 @@
     <div class="container start-bg">
       <div class="start">
         <div class="text">
-          <h1>ПОЛУЧИТЬ<br /><span class="colorful">ЮРИДИЧЕСКУЮ ПОМОЩЬ</span><br />ПРЯМО СЕЙЧАС</h1>
-          <span class="caption"
-            >Пошаговый план действий решения<br />
-            вашего юридического вопроса.</span
-          >
+          <h1>ЮРИСТЫ<br /><span class="colorful">ПО ТРУДОВОМУ ПРАВУ</span></h1>
+          <span class="caption">В САНКТ-ПЕТЕРБУРГЕ</span>
+
+          <h2 class="consult">Консультация по телефону <span class="colorful">до 15 минут - БЕСПЛАТНО!</span></h2>
         </div>
         <div class="form">
           <form action="/get-consultation" id="free-consultation-form">
-            <span class="text"> Оставить номер телефона <br />и наш менеджер свяжется с вами </span>
+            <span class="text">
+              <b>НАПИШИТЕ НОМЕР ТЕЛЕФОНА</b><br />и наш менеджер свяжется с вами <br /><br />
+              по будням с 10:00 до 19:00</span
+            >
             <input type="tel" placeholder="Телефон" class="phone-input" />
-            <button type="submit" id="free-consultation-btn">Бесплатная консультация</button>
+            <button type="submit" id="free-consultation-btn">Перезвоните мне!</button>
             <input class="personal" type="checkbox" id="personal" name="personal" />
             <label for="personal">Согласен на обработку персональных данных</label>
           </form>
         </div>
       </div>
+      <div class="call-us-card">
+        <img src="./img/line1.png" alt="" />
+        <div class="card"><b>Позвоните нам</b> или оставьте свой телефон для связи</div>
+      </div>
     </div>
 
     <div class="container">
       <div class="plus">
-        <h1>ПРЕИМУЩЕСТВА</h1>
+        <h1>С НАМИ НАДЕЖНО И УДОБНО, ВОТ ПОЧЕМУ:</h1>
         <ul class="plus__about">
           <li class="plus__colomn">
             <img src="/img/q-icon.svg" alt="" />
             <h3>Квалификация и опыт</h3>
             <div class="line"></div>
-            <p>
-              У нас работают только <br />высококвалифицированные<br />
-              юристы, имеющие опыт<br />
-              работы более 10 лет,<br />
-              успешно решившие за свою <br />карьеру тысячи дел.
-            </p>
+            <p>В компании работают юристы с опытом работы более 10 лет, с более 1000+ выигранных дел!</p>
           </li>
           <li class="plus__colomn">
             <img src="/img/comfort-icon.svg" alt="" />
@@ -71,12 +74,8 @@
             </h3>
             <div class="line"></div>
             <p>
-              Для нас всегда главным <br />были клиенты которые к нам<br />
-              обращаются и рекомендуют<br />
-              своим близким и друзьям.<br />
-              Так складывается репутация<br />
-              и доверие, которое нам<br />
-              оказывают.
+              У нас есть офис, к нам можно приехать. Мы открыты и на связи с 10:00 до 19:00. Сразу называем цену за
+              работу. Работаем до результата, прописанного в договоре.
             </p>
           </li>
           <li class="plus__colomn">
@@ -84,10 +83,8 @@
             <h3>Обслуживание <br />конфиденциально</h3>
             <div class="line"></div>
             <p>
-              Важным условием для<br />
-              установления партнерских <br />отношений между юристом и его<br />
-              клиентами является строгое<br />
-              следование принципам <br />конфиденциальности
+              Все что обсуждается 1 на 1 между юристом и клиентом строго конфиденциально!Нам можно доверить даже самые
+              неразглашаемые нюансы вашего вопроса
             </p>
           </li>
           <li class="plus__colomn">
@@ -98,11 +95,8 @@
             </h3>
             <div class="line"></div>
             <p>
-              Применяемый нашей<br />
-              компанией комплексный<br />
-              подход и глубокое погружение <br />в проблемы клиентов<br />
-              помогает достичь высоких<br />
-              результатов в сотрудничестве.
+              У наших юристов огромный опыт в сфере трудовых споров. Вникаем в суть Вашей проблемы, предложим сразу
+              решения! А главное гарантируем результат.
             </p>
           </li>
         </ul>
@@ -113,24 +107,35 @@
         <div class="video-mask">
           <video src=""></video>
         </div>
+        <img src="./img/line2.png" alt="" class="line2" />
         <div class="info__text">
-          <h1>Информация о услуге</h1>
+          <h1>ПОСМОТРИТЕ ВИДЕО</h1>
+          <h4>
+            Юридическая фирма "Олимп" специализируется на трудовых спорах. Наиболее частые обращения клиентов, с
+            которыми мы работаем:
+          </h4>
           <p>
-            ЮЦ «ВИ» - не просто компания, а сплоченная команда профессионалов, целью которых является предоставление
-            юридические услуг наивысшего качества по приемлемым ценам, улучшающие жизни сегодняшнего и будущего
-            поколений России.
+            - невыплата отпускных, больничных.<br />
+            - незаконное увольнение.<br />
+            - необоснованное сокращение.<br />
+            - незаконное снижение зарплаты.<br />
+            - невыплата заработной платы.<br />
+            - отказ в увольнении по собственному желанию.<br />
+            - неоплата сверхурочных.<br />
+            - принуждение к подписанию дополнительных соглашений.<br />
+            - отказ в восстановлении на рабочем месте после декрета и др.<br />
           </p>
+          <h4>Что конкретно мы делаем?</h4>
           <p>
-            Еще одно наше отличие - финансовые гарантии на исполнение договора. Мы прилагаем максимум усилий для решения
-            вопроса нашего клиента. Но человек или организация, обратившиеся к нам знают, что они всегда смогут вернуть
-            потраченные деньги. Беспрецедентная ответственность, гарантии, прописанные в тексте договора и железная
-            репутация, вот столпы на которых строится успех ЮЦ «ВИ».
-          </p>
-          <p>
-            Наши сотрудники широко известны и авторитетны в юридических кругах. Мы хорошо знаем не только законы, но и
-            принципы каждого конкретного судьи и каждого государственного служащего, с которыми нам часто приходилось
-            работать. Тысячи клиентов для, которых мы успешно решили схожие проблемы, оставили свои отзывы. Уверены, это
-            подтвердит наш опыт, высокий профессионализм и позволит принять Вам правильное решение
+            - проконсультируем с учетом последних изменений трудового законодательства.<br />
+            - урегулируем трудовой спор досудебно.<br />
+            - составим и подадим иск в судебные органы без вашего участия.<br />
+            - обеспечим вашу защиту в суде.<br />
+            - оформим претензии правильно.<br />
+            - соберем нужные документы.<br />
+            - проверим или составим трудовой договор юридически верно.<br />
+            - поможем взыскать заработную плату и другие выплаты.<br />
+            - оспорим незаконное увольнение и прочие нарушения со стороны работодателя.<br />
           </p>
         </div>
       </div>
@@ -143,38 +148,35 @@
           <li class="garant__item">
             <div class="garant__teg">
               <img src="/img/wallet-icon.png" alt="" />
-              <h3>Гарантия лучшей <br />цены</h3>
+              <h3>Гарантия <br /><span class="colorful">цены</span></h3>
             </div>
             <p>
-              Если вы найдете цену ниже нашей на аналогичную услугу при том же уровне квалификации бренда мы предложим
-              такую же цену!
+              Цена - неизменна!<br />
+              Мы фиксируем цену, сразу, при первом обращении клиента, мы делаем расчет и прописываем цену в договоре
+              оказания услуг.
             </p>
           </li>
           <li class="garant__item">
             <div class="garant__teg">
               <img src="/img/rouble-icon.png" alt="" />
-              <h3>
-                Гарантия возврата<br />
-                денег
-              </h3>
+              <h3>Гарантия возврата<br /><span class="colorful">денег</span></h3>
             </div>
-            <p>
-              В соответствии с законом «О Защите прав потребителей» в случае не достижения поставленных целей, мы
-              возвращаем вам деньги, за вычетом незначительных сумм за фактически
-              <br />произведенные юридические действия.
-            </p>
+            <p>Гарантируем возврат денег, если прописанные в договоре цели не выполнены по итогам нашей работы.</p>
           </li>
           <li class="garant__item">
             <div class="garant__teg">
               <img src="/img/garant-icon.png" alt="" />
               <h3>
-                Гарантия на оказанные <br />
-                услуги
+                Гарантия
+                <span class="colorful"
+                  > на оказанные <br />
+                  услуги</span
+                >
               </h3>
             </div>
             <p>
-              Если в течении 1 года с момента оказания вам наших услуг возникли какие то проблемы, связанные с ними, мы
-              выступим в качестве третьего лица на вашей стороне бесплатно!
+              Гарантируем поддержку после завершения работ по договору, выступим на вашей стороне бесплатно, если
+              возникнут "дополнительные" сложности.
             </p>
           </li>
         </ul>
@@ -183,12 +185,16 @@
 
     <div class="container gray-bg">
       <div class="consult">
-        <h1>КОНСУЛЬТАЦИЯ ПО ТЕЛЕФОНУ БЕСПЛАТНО</h1>
+        <p class="title">ПЕРВИЧНАЯ КОНСУЛЬТАЦИЯ ЮРИСТА ДО 15 МИНУТ - <b>БЕСПЛАТНО</b></p>
         <div class="consult__row">
           <div class="consult__column">
-            <h3>По телефону</h3>
+            <!-- <p>Закажите звонок, <b>перезвоним за 15 минут</b></p> -->
             <div class="row">
               <form action="/get-consultation" id="get-phone-call-2">
+                <p class="text">
+                  Закажите звонок, <br />
+                  <b>перезвоним за 15 минут</b>
+                </p>
                 <div class="input-btn">
                   <input type="tel" placeholder="Ваш телефон" />
                   <button id="order-call" type="submit">ЗАКАЗАТЬ ЗВОНОК</button>
@@ -199,17 +205,20 @@
                 </div>
               </form>
 
-              <a class="call-us" href="tel:8(812)987-30-30">
-                <img src="./img/phone-icon.svg" alt="" />
+              <div class="call-us" href="tel:8(812)987-30-30">
+                <p class="text">
+                  Позвоните нам, <br />
+                  <b>с 10:00 до 19:00</b>
+                </p>
                 <div class="phone">
-                  <div class="text">Позвонить нам по телефону</div>
-                  <h3>8(812) 987-30-30</h3>
+                  <img src="./img/phone-icon.svg" alt="" />
+                  <h3><a href="tel:8(921) 943-22-71">8(921) 943-22-71</a></h3>
                 </div>
-              </a>
+              </div>
             </div>
             <div class="line"></div>
             <div class="social">
-              <h2>Онлайн</h2>
+              <p class="gray-text">Напишите нам через <b>мессенджер или почте</b></p>
               <div class="contacts-cont">
                 <a href=""> <img src="./img/whatsapp-icon.png" alt="" />Whatsapp</a>
                 <a href="">
@@ -225,7 +234,9 @@
           </div>
           <div class="consult__column2">
             <div class="in-office">
-              <h3>В офисе</h3>
+              <h3>Приезжайте в наш офис на консультацию</h3>
+
+              <button id="big-form-button">Записаться на консультацию</button>
 
               <div class="plus-container">
                 <div class="heading">Преимущества личной встречи</div>
@@ -239,10 +250,9 @@
                 </div>
                 <div class="item">
                   <img src="./img/medal-icon.svg" alt="" />
-                  <span> Чай, кофе в офисе </span>
+                  <span> Личное знакомство и общение с вашим личным юристом </span>
                 </div>
               </div>
-              <button id="big-form-button">Записаться на консультацию</button>
             </div>
           </div>
         </div>
@@ -257,12 +267,19 @@
           <div class="line"></div>
 
           <h3>Санкт-Петербург</h3>
-          <p><a href="https://yandex.ru/maps/-/CDh-n2Iv">191014, Санкт-Петербург, Басков переулок, дом 5, офис 4</a></p>
-          <p>Тел. рабочий: <a href="tel:8 (812) 987-30-30">8 (812) 987-30-30</a></p>
+          <p>
+            <a href="https://yandex.ru/maps/-/CDxYED9N"
+              >Комиссара Смирнова 15 (1 этаж, вход со двора, здание Выборгского ДК)</a
+            >
+          </p>
+          <p>Тел. рабочий: <a href="tel:+7 (921) 943-22-71">+7 (921) 943-22-71</a></p>
 
-          <p>Тел. мобильный: <a href="tel:8 (812) 905-00-74">8 (812) 905-00-74</a></p>
+          <p>E-mail: <a href="mailto:urolimp@yandex.ru">urolimp@yandex.ru</a></p>
 
-          <p>E-mail: <a href="mailto:general@olymplaw.com">general@olymplaw.com</a></p>
+          <p>
+            ОГРН 1137847171351 <br />
+            ИНН 7841482316
+          </p>
         </div>
         <div class="contacts__map">
           <div style="position: relative; overflow: hidden">
@@ -271,11 +288,11 @@
               style="color: #eee; font-size: 12px; position: absolute; top: 0px"
               >Санкт‑Петербург</a
             ><a
-              href="https://yandex.ru/maps/2/saint-petersburg/?from=mapframe&ll=30.348061%2C59.938614&mode=usermaps&source=mapframe&um=constructor%3A3096909fd343f79f085fd2b9799aec2c17266559f6702be602c32549e0d21d82&utm_medium=mapframe&utm_source=maps&z=14"
+              href="https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_komissara_smirnova_15/Z0kYdQNoSkIPQFtjfXV3cnxmZg==/inside/?ll=30.348378%2C59.963053&tab=inside&utm_medium=mapframe&utm_source=maps&z=17"
               style="color: #eee; font-size: 12px; position: absolute; top: 14px"
-              >Яндекс Карты — транспорт, навигация, поиск мест</a
+              >Организации внутри: Санкт-Петербург, улица Комиссара Смирнова, 15 — Яндекс Карты</a
             ><iframe
-              src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=30.348061%2C59.938614&mode=usermaps&source=mapframe&um=constructor%3A3096909fd343f79f085fd2b9799aec2c17266559f6702be602c32549e0d21d82&utm_source=mapframe&z=14"
+              src="https://yandex.ru/map-widget/v1/?ll=30.348378%2C59.963053&mode=whatshere&tab=inside&whatshere%5Bpoint%5D=30.348378%2C59.963052&whatshere%5Bzoom%5D=17&z=17"
               width="560"
               height="400"
               frameborder="1"
@@ -336,15 +353,15 @@
       bigFormDialog.close()
     })
 
-    let freeConsultationForm = document.getElementById('free-consultation-form')
-    freeConsultationForm.addEventListener('submit', (event) => {
+    let freeConsultationForm = document.getElementById("free-consultation-form")
+    freeConsultationForm.addEventListener("submit", (event) => {
       miniModalElement.setAttribute("display", "flex")
       miniModalElement.showModal()
       event.preventDefault()
     })
 
-    let callbackButton = document.getElementById('callback-button')
-    callbackButton.addEventListener('click', (event) => {
+    let callbackButton = document.getElementById("callback-button")
+    callbackButton.addEventListener("click", (event) => {
       bigFormDialog.setAttribute("display", "flex")
       bigFormDialog.showModal()
     })

@@ -16,6 +16,7 @@
 }
 .header .contact .contact-info .address {
   font-size: clamp(0.625rem, 0.3267rem + 0.8523vw, 1rem);
+  margin-top: 10px;
 }
 .header .contact .contact-info .phone-number {
   display: flex;
@@ -25,6 +26,7 @@
 }
 .header .contact .contact-info .phone-number img {
   height: 35px;
+  margin-right: 10px;
 }
 .header .contact .callback-button {
   margin-left: 20px;
@@ -78,6 +80,7 @@
 .plus .line {
   height: 2px;
   background-color: #1d438e;
+  margin: 5px;
 }
 .plus p {
   font-size: 18px;
@@ -196,7 +199,16 @@
   border-radius: 48px;
   overflow: hidden;
 }
+.info .line2 {
+  position: absolute;
+  left: 35%;
+}
 
+@media (max-width: 1264px) {
+  .line2 {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .info {
     display: flex;
@@ -215,15 +227,13 @@
   justify-content: space-between;
   min-height: 70vh;
 }
-.start .text .colorful {
-  color: #1d438e;
-}
 .start .text h1 {
   margin-bottom: 4px;
 }
 .start .text .caption {
   color: #626262;
   font-size: clamp(0.875rem, 0.3778rem + 1.4205vw, 1.5rem);
+  font-weight: 700;
 }
 .start .first-image {
   position: absolute;
@@ -242,7 +252,7 @@
 }
 .start .form form .text {
   font-size: clamp(1.125rem, 0.8267rem + 0.8523vw, 1.5rem);
-  font-weight: 600;
+  font-weight: 400;
 }
 .start .form form .phone-input {
   width: 100%;
@@ -276,6 +286,33 @@
 .start .form form label {
   font-size: clamp(0.75rem, 0.6506rem + 0.2841vw, 0.875rem);
 }
+.start .consult {
+  margin-top: 30px;
+  padding-bottom: 0;
+}
+
+.call-us-card {
+  width: 100%;
+  padding-bottom: 100px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.call-us-card img {
+  position: absolute;
+  top: -90px;
+  right: 300px;
+  height: 100px;
+}
+.call-us-card .card {
+  font-size: clamp(1.75rem, 1.5511rem + 0.5682vw, 2rem);
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+  border-radius: 36px;
+  border: 0px;
+}
 
 @media (max-width: 1264px) {
   .start {
@@ -286,6 +323,9 @@
     width: 100%;
     margin-top: 56px;
     margin-bottom: 120px;
+  }
+  .call-us-card {
+    display: none;
   }
 }
 .garant__teg {
@@ -324,6 +364,10 @@
 .consult {
   padding: 100px 0 100px 0;
 }
+.consult .title {
+  font-size: clamp(1.625rem, 0.929rem + 1.9886vw, 2.5rem);
+  text-align: center;
+}
 .consult h1 {
   margin: 0px;
   margin-bottom: 100px;
@@ -333,22 +377,23 @@
   display: flex;
   justify-content: space-between;
 }
+.consult .row .text {
+  font-size: clamp(1.5rem, 1.1023rem + 1.1364vw, 2rem);
+  color: #A6A6A6;
+}
 .consult .row .call-us {
+  flex-direction: column;
   cursor: pointer;
   text-decoration: none;
   display: flex;
   align-items: start;
+  justify-content: space-between;
 }
 .consult .row .call-us img {
   height: 50px;
 }
 .consult .row .phone {
   display: flex;
-  flex-direction: column;
-}
-.consult .row .phone .text {
-  font-size: clamp(0.75rem, 0.4517rem + 0.8523vw, 1.125rem);
-  color: #A6A6A6;
 }
 .consult .row h3 {
   margin: 0;
@@ -420,11 +465,11 @@
   border: 0px;
   border-radius: 12px;
   height: 56px;
-  margin-top: 60px;
+  margin-top: 16px;
+  margin-bottom: 40px;
 }
 .consult .consult__column2 .in-office h3 {
   margin: 0px;
-  margin-bottom: 40px;
 }
 .consult .consult__column2 .in-office .plus-container {
   display: flex;
@@ -456,12 +501,16 @@
   display: flex;
   flex-direction: column;
 }
+.consult .social .gray-text {
+  font-size: clamp(1.5rem, 1.1023rem + 1.1364vw, 2rem);
+  color: #A6A6A6;
+}
 .consult .social h2 {
   margin-top: 0;
 }
 .consult .social a {
   color: #1D438E;
-  font-size: clamp(1rem, 0.2045rem + 2.2727vw, 2rem);
+  font-size: clamp(1.5rem, 1.3011rem + 0.5682vw, 1.75rem);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -674,6 +723,7 @@ ul {
 }
 button {
   cursor: pointer;
+  font-weight: 600;
 }
 
 input {
@@ -682,4 +732,13 @@ input {
 
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.34);
+}
+
+.colorful {
+  color: #1d438e;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=main.css.map */

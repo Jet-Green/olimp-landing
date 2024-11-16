@@ -142,10 +142,18 @@ ul {
 
 button {
   cursor: pointer;
+  font-weight: 600;
 }
 input {
   outline: none;
 }
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.34);
+}
+.colorful {
+  color: #1d438e;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
