@@ -66,7 +66,7 @@
           padding-bottom: 16px;
           font-size: clamp(0.625rem, 0.5256rem + 0.2841vw, 0.75rem);
           border: 0px;
-          min-width: 250px;
+          min-width: 150px;
         }
         input:focus {
           outline: none;
@@ -163,6 +163,9 @@
 }
 
 @media only screen and (max-width: 1464px) {
+  .consult {
+    padding: 50px 0 50px 0;
+  }
   .consult__row {
     display: flex;
     flex-direction: column;

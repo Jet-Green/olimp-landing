@@ -15,6 +15,7 @@
   }
   img {
     height: 71px;
+    width: 71px;
     padding-top: 30px;
   }
 }
@@ -22,7 +23,7 @@
   .garant {
     &__teg {
       display: flex;
-      justify-content: center;
+      justify-content: start;
     }
     ul {
       display: flex;
@@ -31,6 +32,20 @@
       li {
         width: 100%;
       }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .garant {
+    &__teg {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0px;
+    }
+    img {
+      padding: 0;
     }
   }
 }

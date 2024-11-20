@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 140px;
 }
 .header .logo img {
   max-height: 100px;
@@ -51,6 +50,12 @@
   }
   .header .logo img {
     max-height: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -161,6 +166,7 @@
   }
   .plus ul.plus__about {
     display: block;
+    padding: 0;
   }
   .plus li.plus__colomn {
     margin-bottom: 20px;
@@ -181,32 +187,41 @@
   display: flex;
   justify-content: space-between;
   padding: 100px 0 100px 0;
+  gap: 50px;
 }
 .info h1 {
   margin-top: 0px;
   text-align: center;
-}
-.info .info__text {
-  width: 65%;
 }
 .info p {
   font-size: clamp(0.75rem, 0.1534rem + 1.7045vw, 1.5rem);
   line-height: 1.1;
 }
 .info .video-mask {
-  width: 30%;
-  height: 100%;
-  border-radius: 48px;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
 }
 .info .line2 {
   position: absolute;
   left: 35%;
 }
 
+video {
+  cursor: pointer;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
 @media (max-width: 1264px) {
   .line2 {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .info {
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -216,9 +231,6 @@
     align-items: center;
   }
   .info .info__text {
-    width: 100%;
-  }
-  .info .video-mask {
     width: 100%;
   }
 }
@@ -344,13 +356,14 @@
 }
 .garant img {
   height: 71px;
+  width: 71px;
   padding-top: 30px;
 }
 
 @media only screen and (max-width: 1264px) {
   .garant__teg {
     display: flex;
-    justify-content: center;
+    justify-content: start;
   }
   .garant ul {
     display: flex;
@@ -359,6 +372,17 @@
   }
   .garant ul li {
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .garant__teg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .garant img {
+    padding: 0;
   }
 }
 .consult {
@@ -432,7 +456,7 @@
   padding-bottom: 16px;
   font-size: clamp(0.625rem, 0.5256rem + 0.2841vw, 0.75rem);
   border: 0px;
-  min-width: 250px;
+  min-width: 150px;
 }
 .consult .consult__column form .input-btn input:focus {
   outline: none;
@@ -524,6 +548,9 @@
 }
 
 @media only screen and (max-width: 1464px) {
+  .consult {
+    padding: 50px 0 50px 0;
+  }
   .consult__row {
     display: flex;
     flex-direction: column;
@@ -595,6 +622,11 @@
     padding: 0px 40px 0px 40px;
   }
 }
+@media (max-width: 400px) {
+  .container {
+    padding: 0px 12px 0px 12px;
+  }
+}
 body {
   margin: 0;
   font-family: "Montserrat", serif;
@@ -603,10 +635,12 @@ body {
 
 h1 {
   font-size: clamp(2rem, 0.4091rem + 4.5455vw, 4rem);
+  word-break: break-word;
 }
 
 h3 {
   font-size: clamp(1.5rem, 1.2017rem + 0.8523vw, 1.875rem);
+  word-break: break-word;
 }
 
 .start-bg {
