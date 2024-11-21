@@ -202,6 +202,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  background-color: #232323;
+}
+.info .video-mask .video-overlay {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
 }
 .info .line2 {
   position: absolute;
@@ -212,16 +218,20 @@ video {
   cursor: pointer;
   max-width: 100%;
   border-radius: 20px;
+  opacity: 0;
 }
 
-@media (max-width: 1264px) {
-  .line2 {
-    display: none;
+@media (max-width: 1700px) {
+  .info .line2 {
+    left: 30% !important;
   }
 }
 @media (max-width: 1000px) {
   .info {
     flex-direction: column;
+  }
+  .line2 {
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {

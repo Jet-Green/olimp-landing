@@ -105,7 +105,16 @@
     <div class="container gray-bg">
       <div class="info">
         <div class="video-mask">
-          <video autoplay loop>
+          <!-- <video id="myVideo" src="your-video-file.mp4" preload="metadata"></video> -->
+          <!-- <div class="controls">
+            <button class="control-button" id="playPauseBtn">▶️</button>
+            <input type="range" id="seekBar" value="0" max="100" />
+          </div> -->
+          <div class="video-overlay" id="play-button">
+            <img src="./img/play-button.svg" alt="">
+          </div>
+
+          <video loop id="video">
             <source src="./video_1.mp4" type="video/mp4" />
           </video>
         </div>
@@ -400,4 +409,19 @@
     ><div><img src="https://mc.yandex.ru/watch/98988838" style="position: absolute; left: -9999px" alt="" /></div
   ></noscript>
   <!-- /Yandex.Metrika counter -->
+
+  <script>
+    const video = document.getElementById("video")
+    const btn = document.getElementById("play-button")
+
+    btn.addEventListener("click", () => {
+      if (video.paused) {
+        video.play()
+      } else {
+        video.pause()
+      }
+      video.style.opacity = 1;
+      btn.style.opacity = 0;
+    })
+  </script>
 </html>
