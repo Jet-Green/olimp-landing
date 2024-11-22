@@ -2,6 +2,7 @@
   &__teg {
     display: flex;
     gap: 15px;
+    height: 171px;
   }
   h1 {
     text-align: center;
@@ -17,6 +18,12 @@
     height: 71px;
     width: 71px;
     padding-top: 30px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
   }
 }
 @media only screen and (max-width: 1264px) {
