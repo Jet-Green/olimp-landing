@@ -369,6 +369,9 @@ video {
   gap: 15px;
   height: 171px;
 }
+.garant__teg h3 {
+  word-break: keep-all;
+}
 .garant h1 {
   text-align: center;
 }

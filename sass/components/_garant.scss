@@ -3,6 +3,9 @@
     display: flex;
     gap: 15px;
     height: 171px;
+    h3 {
+      word-break: keep-all;
+    }
   }
   h1 {
     text-align: center;
